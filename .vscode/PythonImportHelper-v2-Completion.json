@@ -1,0 +1,19 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "FastApi_ Hello.main",
+        "description": "FastApi_ Hello.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Hello World\"}\n@app.get(\"/user\")\nasync def get_user():\n    return {\n        \"name\": \"John Doe\", \n        \"age\": 30,\n        \"email\":\"john@gmail.com\",",
+        "detail": "FastApi_ Hello.main",
+        "documentation": {}
+    }
+]
