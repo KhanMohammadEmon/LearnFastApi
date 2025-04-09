@@ -1,0 +1,52 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class Role(str, Enum):\n    ADMIN = \"admin\"\n    USER = \"user\"\n@app.get(\"/user/{role}\")\nasync def user(role: Role):\n    if role is role.ADMIN:\n        return JSONResponse(\n            status_code=status.HTTP_200_OK,\n            content={\n                \"User\": \"Emon\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nclass Role(str, Enum):\n    ADMIN = \"admin\"\n    USER = \"user\"\n@app.get(\"/user/{role}\")\nasync def user(role: Role):\n    if role is role.ADMIN:\n        return JSONResponse(\n            status_code=status.HTTP_200_OK,\n            content={",
+        "detail": "main",
+        "documentation": {}
+    }
+]
