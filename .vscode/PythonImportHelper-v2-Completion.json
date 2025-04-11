@@ -32,6 +32,30 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "JSONResponse",
         "importPath": "fastapi.responses",
         "description": "fastapi.responses",
@@ -45,6 +69,38 @@
         "description": "enum",
         "isExtraImport": true,
         "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "importPath": "schemas.userSchema",
+        "description": "schemas.userSchema",
+        "isExtraImport": true,
+        "detail": "schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
         "documentation": {}
     },
     {
@@ -90,6 +146,24 @@
         "description": "quary_params.main",
         "peekOfCode": "fake_items_db = [{\"item_name\": \"Foo\"}, {\n    \"item_name\": \"Bar\"}, {\"item_name\": \"Baz\"}]\n@app.get(\"/\")\nasync def root(skip: int = 0, limit: int = 10):\n    items = fake_items_db[skip: skip + limit]\n    return [items]",
         "detail": "quary_params.main",
+        "documentation": {}
+    },
+    {
+        "label": "UserSchema",
+        "kind": 6,
+        "importPath": "RequestBody.schemas.userSchema",
+        "description": "RequestBody.schemas.userSchema",
+        "peekOfCode": "class UserSchema(BaseModel):\n    name: str | None = None\n    email: str \n    password: str \n    role: Role = Role.ADMIN",
+        "detail": "RequestBody.schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "RequestBody.main",
+        "description": "RequestBody.main",
+        "peekOfCode": "app = FastAPI()\n@app.post(\"/\", tags = [\"create user\"])\nasync def store(user: UserSchema) -> UserSchema:\n    encode = jsonable_encoder(user)\n    print(encode)\n    return JSONResponse(status_code = status.HTTP_201_CREATED, content = encode)\n@app.get(\"/\")\nasync def index():\n    return {\n        \"Hello\":\"World\"",
+        "detail": "RequestBody.main",
         "documentation": {}
     }
 ]

@@ -2,6 +2,7 @@ FastApi_ Hello
 path_params
 python_venv
 uvicorn_web_server
+quary_params
 __pycache__
 .vscode
 
