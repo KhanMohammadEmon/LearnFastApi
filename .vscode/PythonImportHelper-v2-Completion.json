@@ -32,6 +32,22 @@
         "documentation": {}
     },
     {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -69,6 +85,14 @@
         "description": "enum",
         "isExtraImport": true,
         "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -128,6 +152,15 @@
         "description": "path_params.main",
         "peekOfCode": "app = FastAPI()\nclass Role(str, Enum):\n    ADMIN = \"admin\"\n    USER = \"user\"\n@app.get(\"/user/{role}\")\nasync def user(role: Role):\n    if role is role.ADMIN:\n        return JSONResponse(\n            status_code=status.HTTP_200_OK,\n            content={",
         "detail": "path_params.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "quaryValidation.main",
+        "description": "quaryValidation.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/items\", tags=[\"items\"])\nasync def get_items(q: Annotated[str, Query(title = \"Get all Item\",description=\"Item get description\",alias=\"Enter str\",deprecated = False)] = None):\n    print(q)\n    if q:\n        false_data.update({\"new Items\": q})\n    return false_data\n@app.get(\"/\", tags=[\"health\"])\nasync def root(q: str | None = None):\n    print(q)",
+        "detail": "quaryValidation.main",
         "documentation": {}
     },
     {

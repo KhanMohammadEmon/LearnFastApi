@@ -3,6 +3,8 @@ path_params
 python_venv
 uvicorn_web_server
 quary_params
+quaryValidation
+venv
 __pycache__
 .vscode
 
