@@ -8,6 +8,78 @@
         "documentation": {}
     },
     {
+        "label": "Body",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -64,27 +136,51 @@
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "fastapi.responses",
+        "detail": "pydantic",
         "documentation": {}
     },
     {
-        "label": "Enum",
-        "importPath": "enum",
-        "description": "enum",
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
         "isExtraImport": true,
-        "detail": "enum",
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "HttpUrl",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -96,11 +192,115 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
         "isExtraImport": true,
-        "detail": "pydantic",
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
+        "documentation": {}
+    },
+    {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
+        "documentation": {}
+    },
+    {
+        "label": "jsonable_encoder",
+        "importPath": "fastapi.encoders",
+        "description": "fastapi.encoders",
+        "isExtraImport": true,
+        "detail": "fastapi.encoders",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "importPath": "model.user",
+        "description": "model.user",
+        "isExtraImport": true,
+        "detail": "model.user",
         "documentation": {}
     },
     {
@@ -120,11 +320,84 @@
         "documentation": {}
     },
     {
-        "label": "jsonable_encoder",
-        "importPath": "fastapi.encoders",
-        "description": "fastapi.encoders",
-        "isExtraImport": true,
-        "detail": "fastapi.encoders",
+        "label": "User",
+        "kind": 6,
+        "importPath": "Body_Fields.main",
+        "description": "Body_Fields.main",
+        "peekOfCode": "class User(BaseModel):\n    name: str | None\n    userName: str\n    bio: str | None = Field(\n        title=\"user bio\",\n        max_length=100,\n    )\n    salary: float = Field(\n        ge=1000,\n    )",
+        "detail": "Body_Fields.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Body_Fields.main",
+        "description": "Body_Fields.main",
+        "peekOfCode": "app = FastAPI()\nclass User(BaseModel):\n    name: str | None\n    userName: str\n    bio: str | None = Field(\n        title=\"user bio\",\n        max_length=100,\n    )\n    salary: float = Field(\n        ge=1000,",
+        "detail": "Body_Fields.main",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "Body_Multiple_Params.main",
+        "description": "Body_Multiple_Params.main",
+        "peekOfCode": "class User(BaseModel):\n    name: str | None = None\n    userName: str\n    password: str\n    age: int | None = 20\n@app.put(\"/{id}\", tags=[\"Get ID\"])\nasync def get_id(id: Annotated[int, Path(title=\"Path id\", ge=1, le=10)], query: Annotated[str, Query(alias=\"Enter Name\", max_length=10, min_length=2)] = None, user: User = None):\n    result = {\n        \"userID\": id\n    }",
+        "detail": "Body_Multiple_Params.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Body_Multiple_Params.main",
+        "description": "Body_Multiple_Params.main",
+        "peekOfCode": "app = FastAPI()\nclass User(BaseModel):\n    name: str | None = None\n    userName: str\n    password: str\n    age: int | None = 20\n@app.put(\"/{id}\", tags=[\"Get ID\"])\nasync def get_id(id: Annotated[int, Path(title=\"Path id\", ge=1, le=10)], query: Annotated[str, Query(alias=\"Enter Name\", max_length=10, min_length=2)] = None, user: User = None):\n    result = {\n        \"userID\": id",
+        "detail": "Body_Multiple_Params.main",
+        "documentation": {}
+    },
+    {
+        "label": "Relation",
+        "kind": 6,
+        "importPath": "Body_nested_Model.model.user",
+        "description": "Body_nested_Model.model.user",
+        "peekOfCode": "class Relation(Enum):\n    Mother = \"Mother\"\n    Father = \"Father\"\nclass Image(BaseModel):\n    url: HttpUrl  \n    Name:str| None\nclass Parents(BaseModel):\n    full_name: str | None\n    relation:Relation | None = Relation.Mother \nclass UserModel(BaseModel):",
+        "detail": "Body_nested_Model.model.user",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "kind": 6,
+        "importPath": "Body_nested_Model.model.user",
+        "description": "Body_nested_Model.model.user",
+        "peekOfCode": "class Image(BaseModel):\n    url: HttpUrl  \n    Name:str| None\nclass Parents(BaseModel):\n    full_name: str | None\n    relation:Relation | None = Relation.Mother \nclass UserModel(BaseModel):\n    name: str | None\n    userName: str \n    password: str ",
+        "detail": "Body_nested_Model.model.user",
+        "documentation": {}
+    },
+    {
+        "label": "Parents",
+        "kind": 6,
+        "importPath": "Body_nested_Model.model.user",
+        "description": "Body_nested_Model.model.user",
+        "peekOfCode": "class Parents(BaseModel):\n    full_name: str | None\n    relation:Relation | None = Relation.Mother \nclass UserModel(BaseModel):\n    name: str | None\n    userName: str \n    password: str \n    # skill: set[str] = set()\n    reference: Parents \n    image: list[Image]",
+        "detail": "Body_nested_Model.model.user",
+        "documentation": {}
+    },
+    {
+        "label": "UserModel",
+        "kind": 6,
+        "importPath": "Body_nested_Model.model.user",
+        "description": "Body_nested_Model.model.user",
+        "peekOfCode": "class UserModel(BaseModel):\n    name: str | None\n    userName: str \n    password: str \n    # skill: set[str] = set()\n    reference: Parents \n    image: list[Image]",
+        "detail": "Body_nested_Model.model.user",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Body_nested_Model.main",
+        "description": "Body_nested_Model.main",
+        "peekOfCode": "app = FastAPI()\n@app.put(\"/\",tags=[\"nasted\"])\nasync def updateUser(request_body: UserModel):\n   encoded = jsonable_encoder(request_body)\n   print(encoded)\n   return JSONResponse(content=encoded, status_code=200)",
+        "detail": "Body_nested_Model.main",
         "documentation": {}
     },
     {
@@ -134,6 +407,15 @@
         "description": "FastApi_ Hello.main",
         "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Hello World\"}\n@app.get(\"/user\")\nasync def get_user():\n    return {\n        \"name\": \"John Doe\", \n        \"age\": 30,\n        \"email\":\"john@gmail.com\",",
         "detail": "FastApi_ Hello.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "PathValidation.main",
+        "description": "PathValidation.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/products/{product_id}\", tags=[\"products\"])\nasync def get_product(product_id: int):\n    print(product_id)\n    return {\"product_id\": product_id}\n@app.get(\"/user/{id}\", tags=[\"user\"])\nasync def getUer(id: Annotated[int, Path(title=\"The ID of the user to get\")]):\n    result = {\n        \"id\": 1\n    }",
+        "detail": "PathValidation.main",
         "documentation": {}
     },
     {
