@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from schemas.userSchema import UserSchema
 from fastapi.encoders import jsonable_encoder
 
-app = FastAPI()
+app = FastAPI() 
 
 @app.post("/", tags = ["create user"])
 async def store(user: UserSchema) -> UserSchema:

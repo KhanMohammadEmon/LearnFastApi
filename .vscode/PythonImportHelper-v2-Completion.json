@@ -136,6 +136,22 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Body",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -181,6 +197,30 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
@@ -317,6 +357,30 @@
         "description": "schemas.userSchema",
         "isExtraImport": true,
         "detail": "schemas.userSchema",
+        "documentation": {}
+    },
+    {
+        "label": "userModel",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "userModel2",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "userModel3",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
         "documentation": {}
     },
     {
@@ -477,8 +541,44 @@
         "kind": 5,
         "importPath": "RequestBody.main",
         "description": "RequestBody.main",
-        "peekOfCode": "app = FastAPI()\n@app.post(\"/\", tags = [\"create user\"])\nasync def store(user: UserSchema) -> UserSchema:\n    encode = jsonable_encoder(user)\n    print(encode)\n    return JSONResponse(status_code = status.HTTP_201_CREATED, content = encode)\n@app.get(\"/\")\nasync def index():\n    return {\n        \"Hello\":\"World\"",
+        "peekOfCode": "app = FastAPI() \n@app.post(\"/\", tags = [\"create user\"])\nasync def store(user: UserSchema) -> UserSchema:\n    encode = jsonable_encoder(user)\n    print(encode)\n    return JSONResponse(status_code = status.HTTP_201_CREATED, content = encode)\n@app.get(\"/\")\nasync def index():\n    return {\n        \"Hello\":\"World\"",
         "detail": "RequestBody.main",
+        "documentation": {}
+    },
+    {
+        "label": "userModel",
+        "kind": 6,
+        "importPath": "RequestBody_Example.models.user",
+        "description": "RequestBody_Example.models.user",
+        "peekOfCode": "class userModel(BaseModel):\n    name: str| None \nclass userModel2(BaseModel):\n    name: str | None = Field(\n        examples = [\"Emon khan\"]\n    )\nclass userModel3(BaseModel):\n    name: str | None \n    model_config = {\n        \"json_schema_extra\": {",
+        "detail": "RequestBody_Example.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "userModel2",
+        "kind": 6,
+        "importPath": "RequestBody_Example.models.user",
+        "description": "RequestBody_Example.models.user",
+        "peekOfCode": "class userModel2(BaseModel):\n    name: str | None = Field(\n        examples = [\"Emon khan\"]\n    )\nclass userModel3(BaseModel):\n    name: str | None \n    model_config = {\n        \"json_schema_extra\": {\n           \"examples\": [\n                {",
+        "detail": "RequestBody_Example.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "userModel3",
+        "kind": 6,
+        "importPath": "RequestBody_Example.models.user",
+        "description": "RequestBody_Example.models.user",
+        "peekOfCode": "class userModel3(BaseModel):\n    name: str | None \n    model_config = {\n        \"json_schema_extra\": {\n           \"examples\": [\n                {\n                    \"name\": \"Emon khan\",\n                },\n            ]\n        }",
+        "detail": "RequestBody_Example.models.user",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "RequestBody_Example.main",
+        "description": "RequestBody_Example.main",
+        "peekOfCode": "app = FastAPI()\n@app.put(\"/\", tags=[\"Update user 1\"])\nasync def update_user_1(request_body: Annotated[userModel, Body(example={\n    \"name\": \"John Doe\",\n})]):\n    print(request_body)\n    pass\n@app.put(\"/2\", tags=[\"Update user 2\"])\nasync def update_user_2(request_body: Annotated[userModel2, Body()]):\n    print(request_body)",
+        "detail": "RequestBody_Example.main",
         "documentation": {}
     }
 ]
